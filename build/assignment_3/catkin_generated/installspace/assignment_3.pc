@@ -1,0 +1,8 @@
+prefix=/home/xavier/SC627-Assignments-MotionPlanning/install
+
+Name: assignment_3
+Description: Description of assignment_3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
