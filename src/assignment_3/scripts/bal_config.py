@@ -61,7 +61,7 @@ yaw_1, yaw_2, yaw_3, yaw_4, mlst = [], [], [], [], []
 
 fig = plt.figure()
 
-for m in range(3000):                               #200
+for m in range(3000):
     print(m)
     for i in range(4):
         ang_vel=0 + omega
@@ -74,8 +74,7 @@ for m in range(3000):                               #200
     yaw_3.append(agent_state[2][2])
     yaw_4.append(agent_state[3][2])
     mlst.append(m)
-    COM_posx.append((agent_state[0][0]+agent_state[1][0]+agent_state[2][0]+agent_state[3][0])/4)
-    COM_posy.append((agent_state[0][1]+agent_state[1][1]+agent_state[2][1]+agent_state[3][1])/4)
+
     rate.sleep()
 
 for i in range(4):
